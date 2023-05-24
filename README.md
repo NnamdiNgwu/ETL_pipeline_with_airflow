@@ -26,7 +26,7 @@ This project focuses on the extraction, transformation, and loading (ETL) of dat
 
 Below is a screenshot of the Airflow DAG (Directed Acyclic Graph) representing the ETL workflow:
 
-DAG Screenshot
+![DAG Screenshot](https://github.com/NnamdiNgwu/data_etl_aws/blob/main/airflow_screenshot.png)
 
 ### Requirements
 
