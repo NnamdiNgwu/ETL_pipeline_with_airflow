@@ -12,15 +12,15 @@ This project focuses on the extraction, transformation, and loading (ETL) of dat
 
 ### Usage
 
-* 1. Clone the repository: git clone https://github.com/NnamdiNgwu/data_etl_aws.git
-* 2. Install Docker on your system.
-* 3. Build the Docker image: docker build -t data-etl .
-* 4. Configure the necessary parameters, such as the connection details for the data warehouse, Amazon S3, and Postgres database, within the Docker environment.
-* 5. Launch the Docker container: docker run -d --name data-etl-container data-etl
-* 6. Access the container logs to monitor the ETL process: docker logs data-etl-container
-* 7. Verify that the extracted data is successfully transformed and loaded into both the Amazon S3 bucket and the Postgres database.
-* 8. Use the data in the Amazon S3 bucket for further analysis, data processing, or sharing with other AWS services.
-* 9. Query the Postgres database to perform analysis, generate reports, or integrate with other applications.
+* 1 . Clone the repository: git clone https://github.com/NnamdiNgwu/data_etl_aws.git
+* 2 . Install Docker on your system.
+* 3 . Build the Docker image: docker build -t data-etl .
+* 4 . Configure the necessary parameters, such as the connection details for the data warehouse, Amazon S3, and Postgres database, within the Docker environment.
+* 5 . Launch the Docker container: docker run -d --name data-etl-container data-etl
+* 6 . Access the container logs to monitor the ETL process: docker logs data-etl-container
+* 7 . Verify that the extracted data is successfully transformed and loaded into both the Amazon S3 bucket and the Postgres database.
+* 8 . Use the data in the Amazon S3 bucket for further analysis, data processing, or sharing with other AWS services.
+* 9 . Query the Postgres database to perform analysis, generate reports, or integrate with other applications.
 
 ### Airflow DAG
 
@@ -40,7 +40,7 @@ Contributions to this project are welcome! If you have any suggestions, bug fixe
 
 ### License
 
-This project is licensed under the MIT License.
+This project is licensed under the GPL-3.0 License.
 
 Contact
 
