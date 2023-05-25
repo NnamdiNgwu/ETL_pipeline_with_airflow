@@ -22,10 +22,6 @@ default_args={
     'retries':5,
     'retry_delay':timedelta(minutes=5)}
 
-# @task(trigger_rule=TriggerRule.ONE_FAILED, retries=0)
-# def watcher():
-#     raise AirflowException("Failing task because one or more upstream tasks failed.")
-
 def extract_src_tables():
       hook = PostgresHook(postgres_conn_id='postgres_localhost_northwinddb')
       conn = hook.get_conn()
@@ -141,16 +137,16 @@ def postgres_load_s3(data_interval_start, data_interval_end):
        print("save stg_orders date to text file successfuly: %s", f"dags/get_orders{data_interval_start}.txt")
 
 
-    #    #load text file into s3 bucket
-    #    s3_hook = S3Hook(aws_conn_id="minio_S3_conn")
-    #    s3_hook.load_file(
-    #        filename = f.name,
-    #        key=f"orders/{data_interval_start}.txt",
-    #        bucket_name ="airflow",
-    #        replace= True,
-    #        #encrypy= True
-    #    )
-    #    logging.info("stg_orders file %s has been pushed to s3", f.name)
+       #load text file into s3 bucket
+       s3_hook = S3Hook(aws_conn_id="minio_S3_conn")
+       s3_hook.load_file(
+           filename = f.name,
+           key=f"orders/{data_interval_start}.txt",
+           bucket_name ="airflow",
+           replace= True,
+           #encrypy= True
+       )
+       logging.info("stg_orders file %s has been pushed to s3", f.name)
 
 def customer_order_model():
      hook = PostgresHook(postgres_conn_id= 'postgres_localhost_northwinddb')
