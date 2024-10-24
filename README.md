@@ -40,9 +40,9 @@ Contributions to this project are welcome! If you have any suggestions, bug fixe
 
 ### License
 
-This project is licensed under the GPL-3.0 License.
+This project is licensed under the MIT License.
 
 Contact
 
-For any inquiries or feedback, please reach out to nnamdingwu@yandex.com.
+For any inquiries or feedback, please reach out to ....
 
